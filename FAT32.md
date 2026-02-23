@@ -5,7 +5,8 @@ entry is 4 bytes (32-bit), representing the next cluster in a chain.
 hexdump -s 0x0E -n 2 -C blackhole.img
 ```
 
-  <img width="1017" height="96" alt="FAT32-1" src="https://github.com/user-attachments/assets/84532441-4bdd-447e-a779-a76b924b62a3" />
+  
+<img width="622" height="71" alt="FAT32-1" src="https://github.com/user-attachments/assets/e044f0ea-5b64-4d4d-879c-57bf7fc2d985" />
 
 
   
