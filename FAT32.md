@@ -1,3 +1,7 @@
+
+  <img width="503" height="724" alt="image" src="https://github.com/user-attachments/assets/c68b4f63-c412-412d-a54d-c3070d6a2c72" />
+
+
 1.Examine the FAT32 Structure
  ->FAT32 uses two copies of the File Allocation Table (FAT1 and FAT2) for redundancy. Each
 entry is 4 bytes (32-bit), representing the next cluster in a chain.
