@@ -1,6 +1,14 @@
-1.Load the WAV File
 
-file:///home/joker53/Screenshots/FSK.png
+
+<img width="450" height="735" alt="image" src="https://github.com/user-attachments/assets/f3aa0270-7d71-40dc-b023-0baa6396e0bd" />
+
+
+
+
+  1.Load the WAV File
+
+
+
 
 
 ```
