@@ -36,8 +36,12 @@ specified in the lower bits (FAT2)."
 
  ->The Fix: They must change 00 10 back to 00 02 (512 bytes). This is the only way to align
 the file system so it can be mounted.
-  
+
+
+  
   2.Protocol Deep Dive (The Red Herring)
+
+  
   ->SYSTEM CORRUPTED. CLUSTER PARITY MISMATCH AT FAT2.....
   
   Go to Offset 0x28: This is the ExtFlags field. You see 80 00.
