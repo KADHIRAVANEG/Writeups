@@ -1,10 +1,15 @@
 1.Load the WAV File
 
+file:///home/joker53/Screenshots/FSK.png
 
-```rate, data = wav.read("audio.wav")
-data = data.astype(np.float32) / 32767.0```
+
+```
+rate, data = wav.read("audio.wav")
+data = data.astype(np.float32) / 32767.0
+```
 
 ->wav.read() returns two things — the sample rate and the raw audio data as integers (16-bit, range −32768 to +32767).
+
 ->Dividing by 32767.0 normalizes the data to the range −1.0 to +1.0 as floating point. This makes the math cleaner — the correlation values become consistent regardless of volume.
 
 ```for freq in [150000, -150000]:```
@@ -15,23 +20,22 @@ data = data.astype(np.float32) / 32767.0```
 ```
 t = np.arange(len(data)) / fs
 baseband = data * np.exp(-1j * 2 * np.pi * freq * t)
-```
+
 
 **`t`** is a time array in seconds:
-```
+
 t = [0, 0.000001, 0.000002, 0.000003, ...]
       ↑           ↑
    sample 0    sample 1 (1/1000000 seconds later)
-```
+
 
 **`np.exp(-1j * 2 * np.pi * freq * t)`** generates a complex sinusoid at 150,000 Hz:
-```
+
 e^(-j2π·150000·t)
-```
 This is a rotating complex number — it spins around the unit circle 150,000 times per second.
 
 **Multiplying** the audio by this sinusoid **shifts every frequency in the signal down by 150,000 Hz**:
-```
+
 Signal at 150,000 Hz  →  moves to 0 Hz (baseband)
 Signal at 151,270 Hz  →  moves to 1,270 Hz  ← mark tone appears here
 Signal at 151,070 Hz  →  moves to 1,070 Hz  ← space tone appears here
@@ -92,6 +96,7 @@ bits += "1" if m > s else "0"
 ->Sums all 3333 samples:
 
 ~If chunk was 1270 Hz → all samples shifted to DC, all positive, they add up to a big number
+
 ~If chunk was 1070 Hz → samples oscillate randomly after shift, they cancel out to near zero
 
 ```
@@ -113,7 +118,8 @@ Chunk contains 1070 Hz (space):
 ```
 5.Convert Bits to Text
 
-```def bits_to_text(bits):
+```
+def bits_to_text(bits):
     chars = []
     for i in range(0, len(bits) - 8, 8):
         byte = bits[i:i+8]
@@ -136,7 +142,7 @@ This function groups it into 8-bit chunks:
 
 ```
 
-THE FLOW:-
+Final:-
 
 ```
 decoded = bits_to_text(bits)
@@ -150,7 +156,7 @@ After converting bits to text, search for the flag format `tomctf{`. Once found,
 
 ---
 
-## Complete Flow in One Picture
+The Flow:-
 ```
 audio.wav (raw 16-bit integers)
     │
@@ -233,4 +239,9 @@ exit()
  print("\n[-] Still nothing. Is it possible the baud rate or frequencies were changed?"
 
 ```
+
+
+These are the steps for finding flag.....:)
+
+
 
