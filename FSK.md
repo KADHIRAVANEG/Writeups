@@ -1,4 +1,4 @@
-
+# The Ghost in the Static
 
 <img width="450" height="735" alt="image" src="https://github.com/user-attachments/assets/f3aa0270-7d71-40dc-b023-0baa6396e0bd" />
 
@@ -250,6 +250,7 @@ exit()
 
 
 These are the steps for finding flag.....:)
+The Flag:-```tomctf{m0d3m_h1dd3n_1n_n01s3_b3ll_103}```
 
 
 
