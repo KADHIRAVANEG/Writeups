@@ -1,9 +1,11 @@
+# Won The Fate
+
 1.Intro
 
 <img width="450" height="479" alt="image" src="https://github.com/user-attachments/assets/2f3d0844-9ffc-4a09-86bc-db6f18539ba9" />
 
 
-This is the challenge entitled "Won the Fate" from TomCTF 2026.
+->This is the challenge entitled "Won the Fate" from TomCTF 2026.
 
 
 <img width="627" height="210" alt="image" src="https://github.com/user-attachments/assets/22ba38fb-c125-4bd2-b82e-8b5847bb8708" />
