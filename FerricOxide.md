@@ -46,6 +46,10 @@ Trap the "Access Denied" print
     find /g $rsp, +0x4000, 0x1111111111111111
 
 
+<img width="1111" height="172" alt="image" src="https://github.com/user-attachments/assets/c1d6cb3c-e6c3-4744-a96b-4152b4cbdbde" />
+
+
+
 Dump the real key!
 Take the stack address GDB just gave you, add 0x60 to it, and read 16 bytes (two 64-bit words). Replace <address> with your found address:
 
