@@ -13,6 +13,11 @@ The challenge provide a "for.wav" file
 
 <img width="1181" height="256" alt="image" src="https://github.com/user-attachments/assets/1d38e9a7-97dc-4b11-81ec-c158b93e9e23" />
 
+<img width="1009" height="293" alt="image" src="https://github.com/user-attachments/assets/ec191268-50b4-42c5-b675-a37273e1596d" />
+
+
+
+
 we can easily see the flag by switching into Spectrogram view
 
 The Flag:-```tomctf{5pectr0gr4m_ftw}```
