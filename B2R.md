@@ -1,4 +1,4 @@
-##Boot 2 Root
+## Boot 2 Root
 
 1.Intended player flow Recon Player scans the target and sees: HTTP on 8080 SSH on 2222 Web browsing The homepage looks like a normal
 internal portal. 
