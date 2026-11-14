@@ -1,4 +1,62 @@
-#Tom CTF
+# Cybersecurity & CTF Writeups
+
+A curated collection of detailed challenge writeups, exploitation methodologies, reverse engineering walkthroughs, and practical security assessments across multiple platforms, including **TryHackMe Labs** and **TOM CTF**.
+
 ---
-A collection of detailed writeups and exploit scripts for Tom CTF. 
-This repository documents my methodologies, thought processes, and the tools used to solve challenges across categories like Reverse Engineering, MISC, and Forensics.
+
+## 📂 Repository Structure
+
+```text
+├── README.md
+├── Binex.md
+├── BreakIt.md
+├── REloaded.md
+├── screenshots/
+│   ├── Binex/
+│   └── REloaded/
+└── TOMctf/
+    ├── B2R.md
+    ├── BlackHole.md
+    ├── FerricOxide.md
+    ├── Intercepted Transmission.md
+    ├── QuiteRare.md
+    ├── The Ghost in the Static.md
+    └── Won The Fate.md
+```
+
+---
+
+## 🎯 TryHackMe Labs
+
+Practical, hands-on walkthroughs for challenge rooms and boot-to-root machines on [TryHackMe](https://tryhackme.com).
+
+| Machine / Room | Category | Difficulty | Key Concepts & Techniques | Writeup |
+|---|---|---|---|---|
+| **Binex** | Binary Exploitation & Linux Privesc | Medium | SMB user enumeration (`rpcclient`), SSH brute force, SUID GTFOBins, 64-bit stack buffer overflow (GDB), PATH hijacking | [Binex.md](Binex.md) |
+| **Break It** | Web Security & System Pentesting | Medium | Web application enumeration, credential discovery, privilege escalation, post-exploitation | [BreakIt.md](BreakIt.md) |
+| **REloaded** | Reverse Engineering | Hard | Windows PE x86 binary analysis, Ghidra XREF tracing, assembly patching (`JNZ` → `JZ`), stack string deobfuscation, CRT startup (`entry` → `main`) tracing, prime-indexed XOR reversing | [REloaded.md](REloaded.md) |
+
+---
+
+## 🚩 TOM CTF Challenges
+
+Comprehensive solutions and methodologies for challenges from **TOM CTF**, categorized by challenge discipline:
+
+| Challenge | Category | Description / Core Technique | Writeup |
+|---|---|---|---|
+| **Boot 2 Root (B2R)** | Boot-to-Root / Web | Network reconnaissance, HTTP service enumeration on port 8080, SSH pivoting, privilege escalation | [B2R.md](TOMctf/B2R.md) |
+| **BlackHole** | Forensics / Steganography | Image metadata analysis, hidden layer extraction, steganographic data recovery | [BlackHole.md](TOMctf/BlackHole.md) |
+| **Ferric-Oxide** | Reverse Engineering | Rust compiled binary reverse engineering, control flow analysis, key validation | [FerricOxide.md](TOMctf/FerricOxide.md) |
+| **Intercepted Transmission** | Audio Forensics / Signals | Radio transmission analysis, audio spectrogram rendering, hidden frequency decoding | [Intercepted Transmission.md](TOMctf/Intercepted%20Transmission.md) |
+| **Quite-Rare** | Steganography / QR | Corrupted/partial QR code reconstruction, error correction exploitation, payload decoding | [QuiteRare.md](TOMctf/QuiteRare.md) |
+| **The Ghost in the Static** | Signal Forensics | Frequency Shift Keying (FSK) demodulation, radio waveform analysis, signal extraction | [The Ghost in the Static.md](TOMctf/The%20Ghost%20in%20the%20Static.md) |
+| **Won The Fate** | Reverse Engineering / Logic | Binary control flow reconstruction, constraint satisfaction, logic reversing | [Won The Fate.md](TOMctf/Won%20The%20Fate.md) |
+
+---
+
+## 🛠️ Tools & Environments
+
+- **Reverse Engineering**: NSA Ghidra, GDB, GNU Binutils (`objdump`, `strings`, `readelf`), IDA Pro, Rizin / Cutter
+- **Network & Recon**: Nmap, `rpcclient`, Wireshark / TShark, Netcat
+- **Web & Exploitation**: Burp Suite, Python3 custom exploit scripting, GTFOBins
+- **Signals & Forensics**: Sonic Visualiser, Audacity, CyberChef, Steghide, Zsteg, ExifTool
