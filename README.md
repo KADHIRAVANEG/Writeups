@@ -21,11 +21,13 @@ A curated collection of detailed challenge writeups, exploitation methodologies,
     ├── BreakIt.md
     ├── Chrome.md
     ├── Extracted.md
+    ├── KubernetesForEveryone.md
     ├── REloaded.md
     └── screenshots/
         ├── Binex/
         ├── Chrome/
         ├── Extracted/
+        ├── K8sForEveryone/
         └── REloaded/
 ```
 
@@ -37,6 +39,7 @@ Practical, hands-on walkthroughs for challenge machines and boot-to-root labs on
 
 | Machine / Lab | Category | Difficulty | Key Concepts & Techniques | Writeup |
 |---|---|---|---|---|
+| **Kubernetes for Everyone** | Cloud Security / Kubernetes | Medium | Grafana CVE-2021-43798 directory traversal, k0s cluster enumeration, secret extraction, containerd overlayfs snapshot carving, Git history diff analysis, Kubernetes Job SHA-1 reversing | [KubernetesForEveryone.md](TRYHACKME_Labs/KubernetesForEveryone.md) |
 | **Extracted** | DFIR / Network & Memory Forensics | Medium | PowerShell exfiltration analysis, KeePass database & memory carving, CVE-2023-32784 memory exploitation, password permutation | [Extracted.md](TRYHACKME_Labs/Extracted.md) |
 | **Chrome** | DFIR / Network & Windows Forensics | Hard | SMB2 network carving (Wireshark), .NET reversing, AES-256 decryption, DPAPI MasterKey extraction & cracking (John the Ripper), Chrome SQLite credential recovery (`pypykatz`) | [Chrome.md](TRYHACKME_Labs/Chrome.md) |
 | **Binex** | Binary Exploitation & Linux Privesc | Medium | SMB user enumeration (`rpcclient`), SSH brute force, SUID GTFOBins, 64-bit stack buffer overflow (GDB), PATH hijacking | [Binex.md](TRYHACKME_Labs/Binex.md) |
