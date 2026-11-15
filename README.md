@@ -20,10 +20,12 @@ A curated collection of detailed challenge writeups, exploitation methodologies,
     ├── Binex.md
     ├── BreakIt.md
     ├── Chrome.md
+    ├── Extracted.md
     ├── REloaded.md
     └── screenshots/
         ├── Binex/
         ├── Chrome/
+        ├── Extracted/
         └── REloaded/
 ```
 
@@ -35,6 +37,7 @@ Practical, hands-on walkthroughs for challenge machines and boot-to-root labs on
 
 | Machine / Lab | Category | Difficulty | Key Concepts & Techniques | Writeup |
 |---|---|---|---|---|
+| **Extracted** | DFIR / Network & Memory Forensics | Medium | PowerShell exfiltration analysis, KeePass database & memory carving, CVE-2023-32784 memory exploitation, password permutation | [Extracted.md](TRYHACKME_Labs/Extracted.md) |
 | **Chrome** | DFIR / Network & Windows Forensics | Hard | SMB2 network carving (Wireshark), .NET reversing, AES-256 decryption, DPAPI MasterKey extraction & cracking (John the Ripper), Chrome SQLite credential recovery (`pypykatz`) | [Chrome.md](TRYHACKME_Labs/Chrome.md) |
 | **Binex** | Binary Exploitation & Linux Privesc | Medium | SMB user enumeration (`rpcclient`), SSH brute force, SUID GTFOBins, 64-bit stack buffer overflow (GDB), PATH hijacking | [Binex.md](TRYHACKME_Labs/Binex.md) |
 | **Break It** | Web Security & System Pentesting | Medium | Web application enumeration, credential discovery, privilege escalation, post-exploitation | [BreakIt.md](TRYHACKME_Labs/BreakIt.md) |
@@ -63,4 +66,4 @@ Comprehensive solutions and methodologies for challenges from **Tom CTF**, categ
 - **Reverse Engineering**: NSA Ghidra, GDB, GNU Binutils (`objdump`, `strings`, `readelf`), IDA Pro, Rizin / Cutter
 - **Network & Recon**: Nmap, `rpcclient`, Wireshark / TShark, Netcat
 - **Web & Exploitation**: Burp Suite, Python3 custom exploit scripting, GTFOBins
-- **Signals & Forensics**: Sonic Visualiser, Audacity, CyberChef, Steghide, Zsteg, ExifTool, `pypykatz`, John the Ripper
+- **Signals & Forensics**: Sonic Visualiser, Audacity, CyberChef, Steghide, Zsteg, ExifTool, `pypykatz`, John the Ripper, `pykeepass`
