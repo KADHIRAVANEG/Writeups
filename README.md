@@ -20,12 +20,14 @@ A curated collection of detailed challenge writeups, exploitation methodologies,
     ├── Binex.md
     ├── BreakIt.md
     ├── Chrome.md
+    ├── Directory.md
     ├── Extracted.md
     ├── KubernetesForEveryone.md
     ├── REloaded.md
     └── screenshots/
         ├── Binex/
         ├── Chrome/
+        ├── Directory/
         ├── Extracted/
         ├── K8sForEveryone/
         └── REloaded/
@@ -39,6 +41,7 @@ Practical, hands-on walkthroughs for challenge machines and boot-to-root labs on
 
 | Machine / Lab | Category | Difficulty | Key Concepts & Techniques | Writeup |
 |---|---|---|---|---|
+| **Directory** | DFIR / Active Directory & Network Forensics | Hard | TCP SYN-ACK scan analysis, Kerberos AS-REP Roasting (`etype 23`), Hashcat mode 18200, WinRM stream decryption, PowerShell credential dumping (`reg save`) | [Directory.md](TRYHACKME_Labs/Directory.md) |
 | **Kubernetes for Everyone** | Cloud Security / Kubernetes | Medium | Grafana CVE-2021-43798 directory traversal, k0s cluster enumeration, secret extraction, containerd overlayfs snapshot carving, Git history diff analysis, Kubernetes Job SHA-1 reversing | [KubernetesForEveryone.md](TRYHACKME_Labs/KubernetesForEveryone.md) |
 | **Extracted** | DFIR / Network & Memory Forensics | Medium | PowerShell exfiltration analysis, KeePass database & memory carving, CVE-2023-32784 memory exploitation, password permutation | [Extracted.md](TRYHACKME_Labs/Extracted.md) |
 | **Chrome** | DFIR / Network & Windows Forensics | Hard | SMB2 network carving (Wireshark), .NET reversing, AES-256 decryption, DPAPI MasterKey extraction & cracking (John the Ripper), Chrome SQLite credential recovery (`pypykatz`) | [Chrome.md](TRYHACKME_Labs/Chrome.md) |
